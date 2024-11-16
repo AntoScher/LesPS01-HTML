@@ -2,9 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя страница разработчика</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ccc;
+        }
+        header img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .project img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
+    <!-- Шапка с личным фото -->
+    <header>
+        <h1>Привет! Меня зовут Антон</h1>
+        <img src="It's me.jpg" alt="It's my avatar">
+    </header>
 
+    <!-- Раздел приветствия -->
+    <section id="greeting">
+        <p>Я начинающий интернет разработчик с месячным опытом в frontend и backend разработке.</p>
+    </section>
+
+    <!-- Раздел о себе -->
+    <section id="about-me">
+        <h2>Обо мне</h2>
+        <p>Я перспективный и подающий надежды разработчик с 0 опытом работы в сфере WEB&Mobile.</p>
+        <p style="text-indent: 120px;"> Моя цель – создавать удобные, производительные и красивые приложения.</p>
+    </section>
+
+    <!-- Раздел навыков -->
+    <section id="skills">
+        <h2>Мои навыки</h2>
+        <ul>
+            <li><strong>Frontend:</strong> HTML, Flutter</li>
+            <li><strong>Backend:</strong> Flutter Flow, Python, Django, SQL</li>
+            <li><strong>Инструменты:</strong> Git, Docker</li>
+        </ul>
+    </section>
+
+    <!-- Раздел портфолио -->
+    <section id="portfolio">
+        <h2>Портфолио</h2>
+
+        <!-- Первый проект -->
+        <div class="project">
+            <h3>Проект 1</h3>
+            <img src="task_menager_-3.png" alt="Проект 1">
+            <p>Описание проекта: Веб-приложение для управления задачами. Моя роль: разработка архитектуры фронтенда и настройка серверной части.</p>
+            <a href="ссылка_на_проект">Посмотреть проект</a>
+        </div>
+
+
+    </section>
+
+    <!-- Раздел контактов -->
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Ты можешь связаться со мной через:</p>
+        <ul>
+            <li>Email: <a href="mailto:твоя_почта@example.com">твоя_почта@example.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/твоя_страница">Моя страница на LinkedIn</a></li>
+            <li>GitHub: <a href="https://github.com/твой_профиль">Мой профиль на GitHub</a></li>
+        </ul>
+    </section>
 </body>
 </html>
