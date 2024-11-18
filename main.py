@@ -1,8 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-
-
-
 def get_english_words():
     url="https://randomword.com/"
     try:
@@ -36,9 +33,6 @@ def word_game():
         if play_again.lower()!="y":
             print("Спасибо за игру!")
             break
-        #if word_dict is None:
-        #    print("Произошла ошибка при получении данных с сайта.")
-        #else:
-        #break
+
     word_game()
         
