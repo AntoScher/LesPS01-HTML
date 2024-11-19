@@ -2,9 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 from googletrans import Translator
 
-"""translator = Translator()
-translation = translator.translate('Hello, world!', dest='ru')
-print(translation.text)"""
+translator = Translator()
+
+
+
 
 def get_english_words():
     url = "https://randomword.com/"
@@ -23,7 +24,6 @@ def get_english_words():
         return None
 
 def word_game():
-    translator = Translator()
     print("Игра начинается!")
     while True:
         word_dict = get_english_words()
@@ -32,24 +32,17 @@ def word_game():
             break
         word = word_dict.get("english_words")
         word_definition = word_dict.get("word_definition")
+        print(f"Значение слова: {word_definition}")
 
-        # Переводим слово и его определение
-        word_translated = translator.translate(word, dest='ru').text
-        word_definition_translated = translator.translate(word_definition, dest='ru').text
-
-        print(f"Значение слова: {word_definition} [{word_definition_translated}]")
-
-        user = input(f"Что это за слово? [{word_translated}] ")
+        user = input("Что это за слово? ")
         if user.lower() == word.lower():
             print("Ответ верный!")
         else:
-            print(f"Ответ неверный, правильный ответ - {word} [{word_translated}]!")
+            print(f"Ответ неверный, правильный ответ - {word}!")
         play_again = input("Хотите продолжить? y/n: ")
         if play_again.lower() != "y":
             print("Спасибо за игру!")
             break
-
-
 
 if __name__ == "__main__":
     word_game()
