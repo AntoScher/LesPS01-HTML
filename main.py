@@ -2,9 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 from googletrans import Translator
 
-"""translator = Translator()
-translation = translator.translate('Hello, world!', dest='ru')
-print(translation.text)"""
 
 def get_english_words():
     url = "https://randomword.com/"
