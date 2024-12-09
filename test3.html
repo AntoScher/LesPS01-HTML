@@ -7,12 +7,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Шапка -->
+
   <header class="bg-primary text-white text-center py-3">
     <h1>Домашняя кухня братских народов</h1>
   </header>
 
-  <!-- Навигационное меню -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Главная</a>
@@ -32,142 +31,48 @@
     </div>
   </nav>
 
-  <!-- Основной контент -->
   <main class="container my-4">
-    <div class="row">
-      <div class="col-12 col-md-2">
-        <strong>Название Блюда</strong>
-      </div>
-      <div class="col-12 col-md-1">
-        <strong>Оценка</strong>
-      </div>
-      <div class="col-12 col-md-2">
-        <strong>Ссылка на Рецепт</strong>
-      </div>
-      <div class="col-12 col-md-3">
-        <strong>Фото Блюда</strong>
-      </div>
-      <div class="col-12 col-md-4">
-        <strong>Автор Рецепта</strong>
-      </div>
-    </div>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Название Блюда</th>
+          <th>Оценка</th>
+          <th>Ссылка на Рецепт</th>
+          <th>Фото Блюда</th>
+          <th>Автор Рецепта</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Борщ</td>
+          <td>9</td>
+          <td><a href="https://m.povar.ru/recipes/borsh_klassicheskii_s_govyadinoi-54428.html">Рецепт</a></td>
+          <td><img src="https://img.freepik.com/premium-photo/borscht-soup-borscht-with-meat-wooden-white-background_560930-1776.jpg?w=740" alt="Борщ" width="100"></td>
+          <td>
+            <div class="card d-flex flex-row align-items-center">
+              <div class="card-body">
+                <p>Иван Иванович</p>
+                <p>Дата рождения: 01.01.1980</p>
+                <p>Город: Москва</p>
+                <p>Email: ivan@example.com</p>
+              </div>
+              <img src="https://civilisable.com/wp-content/uploads/2024/02/Traditional-Russian-Clothing-for-Men-25.2.2024.jpg" alt="Иван Иванович" class="card-img" style="width: 100px;">
+            </div>
+          </td>
+        </tr>
+        </tbody>
+    </table>
+  </main>
 
-    <div class="row">
-      <div class="col-12 col-md-2">
-        Борщ
-      </div>
-      <div class="col-12 col-md-1">
-        9
-      </div>
-      <div class="col-12 col-md-2">
-        <a href="https://m.povar.ru/recipes/borsh_klassicheskii_s_govyadinoi-54428.html">Рецепт</a>
-      </div>
-      <div class="col-12 col-md-3">
-        <img src="https://img.freepik.com/premium-photo/borscht-soup-borscht-with-meat-wooden-white-background_560930-1776.jpg?w=740" alt="Борщ" class="img-fluid">
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card d-flex flex-row align-items-center">
-          <div class="card-body">
-            <p>Иван Иванович</p>
-            <p>Дата рождения: 01.01.1980</p>
-            <p>Город: Москва</p>
-            <p>Email: ivan@example.com</p>
-          </div>
-          <img src="https://civilisable.com/wp-content/uploads/2024/02/Traditional-Russian-Clothing-for-Men-25.2.2024.jpg" alt="Иван Иванович" class="card-img" style="width: 100px;">
-        </div>
-      </div>
+  <footer class="bg-light text-center py-4">
+    <p>&copy; 2024 Домашняя кухня братских народов. Все права защищены.</p>
+    <div>
+      <a href="#" class="text-decoration-none me-2">E-mail</a>
+      <a href="#" class="text-decoration-none me-2">Telegram</a>
+      <a href="#" class="text-decoration-none">Телефон</a>
     </div>
+  </footer>
 
-    <div class="row">
-      <div class="col-12 col-md-2">
-        Драники
-      </div>
-      <div class="col-12 col-md-1">
-        8
-      </div>
-      <div class="col-12 col-md-2">
-        <a href="https://m.povar.ru/recipes/draniki_kartofelnye_klassicheskie-43098.html">Рецепт</a>
-      </div>
-      <div class="col-12 col-md-3">
-        <img src="https://c7.alamy.com/comp/2AWB3K7/traditional-ukrainian-potato-pancakes-deruny-served-on-stone-background-with-copy-space-2AWB3K7.jpg" alt="Драники" class="img-fluid">
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card d-flex flex-row align-items-center">
-          <div class="card-body">
-            <p>Анна Петровна</p>
-            <p>Дата рождения: 15.05.1985</p>
-            <p>Город: Минск</p>
-            <p>Email: anna@example.com</p>
-          </div>
-          <img src="https://i.pinimg.com/736x/26/f5/81/26f58177ef9ff343993723c110854cb0.jpg" alt="Анна Петровна" class="card-img" style="width: 100px;">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-md-2">
-        Вареники
-      </div>
-      <div class="col-12 col-md-1">
-        9
-      </div>
-      <div class="col-12 col-md-2">
-        <a href="https://m.povar.ru/recipes/vareniki_s_tvorogom_klassicheskie-90658.html">Рецепт</a>
-      </div>
-      <div class="col-12 col-md-3">
-        <img src="https://img.freepik.com/premium-photo/classic-ukrainian-pierogi-varenyky-with-cherries_960396-627186.jpg?w=740" alt="Вареники" class="img-fluid">
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card d-flex flex-row align-items-center">
-          <div class="card-body">
-            <p>Олег Сергеевич</п>
-            <p>Дата рождения: 22.08.1975</п>
-            <p>Город: Киев</п>
-            <p>Email: oleg@example.com</п>
-          </div>
-          <img src="https://m.media-amazon.com/images/I/51Sp7nmeWeL.jpg" alt="Олег Сергеевич" class="card-img" style="width: 100px;">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-md-2">
-        Бигос
-      </div>
-      <div class="col-12 col-md-1">
-        8
-      </div>
-      <div class="col-12 col-md-2">
-        <a href="https://m.povar.ru/recipes/bigos_polskii-47302.html">Рецепт</а>
-      </div>
-      <div class="col-12 col-md-3">
-        <img src="https://eatingeuropean.com/wp-content/uploads/2017/10/Bigos-Polish-Hunter-Stew-1.jpg" alt="Бигос" class="img-fluid">
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card d-flex flex-row align-items-center">
-          <div class="card-body">
-            <p>Мария Ивановна</п>
-            <p>Дата рождения: 11.11.1990</п>
-            <p>Город: Варшава</п>
-            <п>Email: maria@example.com</п>
-          </div>
-          <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5Ml31KHSVbyaJxqAiZ642-8lOCYuLE3DVLPNgsfpPjn0_SHS1p0jM9yZLl9Do" alt="Мария Ивановна" class="card-img" style="width: 100px;">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-md-2">
-        Фалафель
-      </div>
-      <div class="col-12 col-md-1">
-        10
-      </div>
-      <div class="col-12 col-md-2">
-        <a href="https://m.povar.ru/recipes/falafel-5014.html">Рецепт</а>
-      </div>
-      <div class="col-12 col-md-3">
-        <img src="https://tastythriftytimely.com/wp-content/uploads/2023/06/Falafel-Pita-1-1367x2048.jpg" alt="Фалафель" class="img-fluid">
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card d[_{{{CITATION{{{_1{](https://github.com/Victem/web-progr/tree/58eb47efb72c8f0de4401627b76d12f695e0fa42/src%2Fcss%2FREADME.MD)[_{{{CITATION{{{_2{](https://github.com/Christinabraham/studentapp/tree/bd00498e3bf47496cc98610a272330995bba4642/resources%2Fviews%2Fwelcome.blade.php)[_{{{CITATION{{{_3{](https://github.com/litposthinker/Tugas-aydin/tree/d488355075682b7260e2bc77502204a9221c1596/portofolio-gue%2Fdetail.php)[_{{{CITATION{{{_4{](https://github.com/Agilbay04/VLMS-JTI/tree/ac9dee3ecf421da62ff9cf5b76dee9de633b83de/bootstrap-4.6.0%2Fsite%2Fcontent%2Fdocs%2F4.6%2Fcomponents%2Fnavbar.md)[_{{{CITATION{{{_5{](https://github.com/YRZZ/laravel_exam1/tree/9ea034cadbb2eb94ac89f0e3f251dae25683b398/resources%2Fviews%2Flayouts%2Fbase.blade.php)[_{{{CITATION{{{_6{](https://github.com/Cherepanov-Pavel/ARTIST-landing/tree/b07b5045f8c5fba3e6df763d82759afafb2cb2c7/index.php)[_{{{CITATION{{{_7{](https://github.com/LLIaJIyHuLLIKa/first_MVC/tree/8b39218c98bbb163d03d0314ba73cdfb6e257e4b/templates%2Fmain_page.php)[_{{{CITATION{{{_8{](https://github.com/demos1981/blog/tree/23fe650d744f12eaaa1b50c5ec083e649a467478/blog%2Fresources%2Fviews%2FLayout.blade.php)[_{{{CITATION{{{_9{](https://github.com/vvistmn/cms-system/tree/b4275a1245ed9eece208113c273279184ec71c25/resources%2Fviews%2Fcomponents%2Fhome%2Fhome-master.blade.php)
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
